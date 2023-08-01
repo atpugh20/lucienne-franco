@@ -1,31 +1,45 @@
 :root {
     --primary-bg: #b1a1ed ;
-    --secondary-bg: #e8e8e8;
+    --color-2: #e8e8e8;
     --color-3: #ACBCFF;
     --color-4: #AEE2FF;
     --color-5: #E6FFFD;
+    --color-6: #fffcf5;
+    --color-7: #f6efe8;
     --text-primary: #494a4d;
     
   }
 
-#navbar{
+.navbar-background{
+    background-color: #b1a1ed;
+}
+
+.navbar{
+    display: flex;
     background-color: var(--primary-bg);
     padding-top: 10px;
     padding-bottom: 10px;
-    text-align: right;
-    
+    justify-content: space-between;
 }
 
-#navbar >a{
-    padding-right: 20px;
+.navbar > .links > a{
+    padding-left: 20px;
     font-weight:bold;
     font-size: 20px;
-    color: var(--secondary-bg);
+    color: var(--color-6);
 }
 
-#navbar >a:hover{
-    color: var(--color-5);
+.navbar > .links > a:hover{
+    color: var(--color-2);
     text-decoration: none;
+}
+
+.navbar > h1{
+    font-size: 25px;
+    color: var(--text-primary);
+    text-align: left;
+    margin-top: 5px;
+    font-weight: lighter;
 }
 
 .primary-text{
@@ -35,7 +49,6 @@
 .secondary-text{
     font-family: 'Montserrat', sans-serif;
 }
-
 
 .title-logo{
     height: 200px;
@@ -51,9 +64,12 @@
     font-size: 25px;
     color: var(--primary-bg);
     letter-spacing: 3px;
+    font-weight: bolder;
 }
 
-
+.home-background{
+    background-color: var(--color-6);
+}
 
 .home-flexbox-vert{
     display: flex;
@@ -66,27 +82,153 @@
     object-fit: cover;
     flex-direction: row;
     justify-content: space-between;
-    background-color: var(--secondary-bg);
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 250px;
+    padding-bottom: 250px;
 }
 
 .profile-image{
-    height: 600px;
+    height: 400px;
 }
 
-.section{
-    padding: 50px;
+.about-background{
+    background-color: var(--color-7) ;
 }
 
-.home{
-    display: flex;
-    background-color: var(--secondary-bg);
+.about{
+    padding-top: 250px;
+    padding-bottom: 250px;
+    text-align: right;
 }
 
-.bottom-banner{
-    background-color: var(--primary-bg);
-    padding: 50px;
+.about > h1{
+    font-weight: bolder;
+}
+
+.about > p{
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.youtube-background{
+    background-color: var(--color-6);
+}
+
+.youtube{
+    padding-top: 250px;
+    padding-bottom: 250px
+}
+
+.youtube > h1{
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.youtube > a > img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 75%;
+}
+
+@media (max-width: 991px){
+    .navbar > .links > a{
+        font-size: 17px;
+    }
+    
+    .home-flexbox-horiz{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 250px;
+        gap: 250px;
+    }
+    
+    .youtube > a > img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 766px){
+    .navbar{
+        justify-content: center;
+    }
+
+    .navbar >  h1{
+        display: none;
+    }
+
+    .navbar > .links > a{
+        font-size: 20px;
+    }
+
+    .about > p{
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 520px){
+    .navbar > .links > a{
+        font-size: 15px;
+    }
+
+    .title-logo{
+        height: 100px;
+        width: 100px;
+        margin-bottom: 7.5px;
+    }
+    
+    .title-top{
+        font-size: 29px;
+        color: var(--text-primary);
+    }
+    .title-bottom{
+        font-size: 12.5px;
+        color: var(--primary-bg);
+        letter-spacing: 1.5px;
+    }
+    .profile-image{
+        width: 200px;
+        height: 100%;
+    }
+    
+    .home-flexbox-horiz{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        gap: 100px
+    }
+
+    .about{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .youtube{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width: 322px){
+    .about > p{
+        font-size: 12.5px;
+        font-weight: bolder;
+    }
+
+    .title-logo{
+        height: 75px;
+        width: 75px;
+        margin-bottom: 5.625px;
+    }
+    
+    .title-top{
+        font-size: 21.75px;
+        color: var(--text-primary);
+    }
+    .title-bottom{
+        font-size: 9.375px;
+        color: var(--primary-bg);
+        letter-spacing: 1.125px;
+    }
+
 }
