@@ -10,13 +10,20 @@
     
   }
 
+.test {
+    background-color: red;
+}
+
+.hidden {
+    display: none;
+}
+
 .navbar-background{
-    background-color: #b1a1ed;
+    background-color: var(--primary-bg);
 }
 
 .navbar{
     display: flex;
-    background-color: var(--primary-bg);
     padding-top: 10px;
     padding-bottom: 10px;
     justify-content: space-between;
@@ -59,6 +66,7 @@
 .title-top{
     font-size: 58px;
     color: var(--text-primary);
+    font-weight: bolder;
 }
 .title-bottom{
     font-size: 25px;
@@ -82,12 +90,15 @@
     object-fit: cover;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 250px;
-    padding-bottom: 250px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .profile-image{
     height: 400px;
+    width: 400px;
+    border-radius: 20%;
+    object-fit: cover;
 }
 
 .about-background{
@@ -95,8 +106,8 @@
 }
 
 .about{
-    padding-top: 250px;
-    padding-bottom: 250px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     text-align: right;
 }
 
@@ -114,8 +125,8 @@
 }
 
 .youtube{
-    padding-top: 250px;
-    padding-bottom: 250px
+    padding-top: 100px;
+    padding-bottom: 100px
 }
 
 .youtube > h1{
@@ -130,6 +141,10 @@
     margin-left: auto;
     width: 75%;
 }
+
+/* .youtube > a > img:hover{
+    width: 74%;
+} */
 
 @media (max-width: 991px){
     .navbar > .links > a{
