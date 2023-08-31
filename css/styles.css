@@ -10,6 +10,9 @@
     
   }
 
+
+/* General Styling */
+
 .test {
     background-color: red;
 }
@@ -17,6 +20,52 @@
 .hidden {
     display: none;
 }
+
+.primary-background {
+    background-color: var(--color-6);
+}
+
+.secondary-background {
+    background-color: var(--color-7) ;
+}
+
+.primary-padding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+/* Fonts */
+
+.primary-text{
+    font-family: 'Bodoni Moda', serif;
+}
+
+.secondary-text{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 25px;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.center-text {
+    text-align: center;
+}
+
+/* Navbar */
 
 .navbar-background{
     background-color: var(--primary-bg);
@@ -37,24 +86,17 @@
 }
 
 .navbar > .links > a:hover{
-    color: var(--color-2);
+    color: var(--color-3);
     text-decoration: none;
+    transition: 200ms;
 }
 
-.navbar > h1{
+.navbar > h3{
     font-size: 25px;
     color: var(--text-primary);
     text-align: left;
     margin-top: 5px;
     font-weight: lighter;
-}
-
-.primary-text{
-    font-family: 'Bodoni Moda', serif;
-}
-
-.secondary-text{
-    font-family: 'Montserrat', sans-serif;
 }
 
 .title-logo{
@@ -79,26 +121,33 @@
     background-color: var(--color-6);
 }
 
-.home-flexbox-vert{
+.flexbox-vert{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.home-flexbox-horiz{
+.flexbox-horiz{
     display: flex;
     object-fit: cover;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
 
-.profile-image{
+.hero-image{
     height: 400px;
     width: 400px;
     border-radius: 20%;
     object-fit: cover;
+}
+.hero-image-alt {
+    width: 100px;
+}
+
+#hero-alt .flexbox-horiz{
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
 }
 
 .about-background{
@@ -111,7 +160,7 @@
     text-align: right;
 }
 
-.about > h1{
+.about > h2{
     font-weight: bolder;
 }
 
@@ -126,10 +175,10 @@
 
 .youtube{
     padding-top: 100px;
-    padding-bottom: 100px
+    padding-bottom: 100px;
 }
 
-.youtube > h1{
+.youtube > h2{
     font-weight: bolder;
     text-align: center;
     padding-bottom: 50px;
@@ -142,16 +191,47 @@
     width: 75%;
 }
 
-/* .youtube > a > img:hover{
-    width: 74%;
-} */
+/* Home Animation */
+
+.youtube > a > img:hover {
+    transform: scale(105%);
+    transition: 500ms;
+}
+
+/* Videos Page */
+
+#videos .flexbox-horiz {
+    align-items: center;
+}
+
+#videos h3 {
+    max-width: 500px;
+}
+
+#videos .primary-background h3, #videos .primary-background p {
+    text-align: right;
+}
+
+iframe:hover {
+    transform: scale(110%);
+    transition: 500ms;
+}
+
+/* Resume Page */
+
+#resume img{
+    border:double 20px;
+    background-color: white;
+    justify-content: center;
+    margin-bottom: 100px;
+}
 
 @media (max-width: 991px){
     .navbar > .links > a{
         font-size: 17px;
     }
     
-    .home-flexbox-horiz{
+    .flexbox-horiz{
         flex-direction: column;
         align-items: center;
         padding-top: 250px;
@@ -245,5 +325,6 @@
         color: var(--primary-bg);
         letter-spacing: 1.125px;
     }
+
 
 }
