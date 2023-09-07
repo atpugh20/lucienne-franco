@@ -138,12 +138,14 @@ p {
     font-size: 58px;
     color: var(--text-primary);
     font-weight: bolder;
+    white-space: nowrap;
 }
 .title-bottom {
     font-size: 25px;
     color: var(--primary-bg);
     letter-spacing: 3px;
     font-weight: bolder;
+    white-space: nowrap;
 }
 
 .hero-image {
@@ -285,6 +287,13 @@ iframe:hover {
 .event-list-title {
     text-align: center; 
     padding-bottom: 50px;
+}
+
+.btn {
+    background-color: #b1a1ed;
+}
+.btn:hover {
+    background-color: #ACBCFF;
 }
 
 /* Device Adjustments */
