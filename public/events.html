@@ -10,50 +10,288 @@
   <link rel="stylesheet" href="../css/styles.css">
   <title>Lucienne Franco</title>
 </head>
+
 <body>
-
-  <nav class="navbar-background">
-    <div class="navbar container">  
-      <h3 class="primary-text">Lucienne Franco</h3>
-      <div class="links secondary-text">
-        <a href="../index.html">Home</a>
-        <a href="./videos.html">Videos</a>
-        <a href="./events.html">Events</a>
-        <a href="./resume.html">Resume</a>
-        <a href="./contact.html">Contact</a>
-      </div>
-    </div>
-  </nav>
-
-  <div class="primary-background primary-padding" id="hero-alt">
-    <div class="container flexbox-horiz">
-        <h1 class="title-top primary-text">Events</h1>
-        <img class="hero-image-alt" src="../assets/img/calendar.svg" alt="">
-    </div>
-  </div>
-
-  <div id="calendar">
-    <div class="secondary-background primary-padding">
-      <div class="container flexbox-horiz">
-        <div class="flexbox-vert">
-          <h2 class="secondary-text">Insert the events here:</h2>
-          <ul>
-            <li>
-              <h3>Will Likely Be similar to the Alliance's Events page</h3>
-            </li>
-            <li>
-              <h3>Here is the link to that page to compare:</h3>
-              <li>
-                <h3><a href="https://www.fortgordonalliance.com/k-12-cybersecurity-education-calendar/">https://www.fortgordonalliance.com/k-12-cybersecurity-education-calendar/</a></h3>
-              </li>
-            </li>
-          </ul>
-          
-          
+    <nav class="navbar-background">
+        <div class="navbar container">  
+            <a href="../index.html"><img src="../assets/img/LF.png" class="title-logo" alt=""></a>
+            <div class="links secondary-text">
+                <a href="../index.html">Home</a>
+                <a href="../public/videos.html" class="">Videos</a>
+                <a href="../public/events.html" class="">Events</a>
+                <a href="../public/resume.html" class="">Resume</a>
+                <!-- <a href="../public/contact.html" class="">Contact</a> -->
+            </div>
+            <div class="dropdown">
+                <button onclick="dropDown()" class="dropbtn">
+                    <img src="../assets/img/menu.svg" class="dropbtn" alt="">
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="../index.html">Home</a>
+                    <a href="../public/videos.html" class="">Videos</a>
+                    <a href="../public/events.html" class="">Events</a>
+                    <a href="../public/resume.html" class="">Resume</a>
+                    <!-- <a href="../public/contact.html" class="">Contact</a> -->
+                </div>
+            </div> 
         </div>
-      </div>
+    </nav>
+
+    <div class="primary-background primary-padding container" id="hero-alt">
+        <div class="flexbox-horiz">
+            <h1 class="title-top primary-text">Events</h1>
+            <img class="hero-image-alt" src="../assets/img/calendar.svg" alt="">
+        </div>
+    </div>
+
+  
+    <div class="event-schedule-area-two bg-color pad100 container primary-background" id="upcoming-events-table">
+        <h3 class="event-list-title">Upcoming Events</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade active show" id="home" role="tabpanel">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th class="" scope="col">Date</th>
+                                            <th scope="col">Venue </th>
+                                            <th scope="col">Event</th>
+                                            <th scope="col">Location </th>
+                                            <th class="text-right" scope="col">Additional Info</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="inner-box">
+                                            <th scope="row">
+                                                <div class="event-date">
+                                                    <!-- <span>Day</span>
+                                                    <p>Month</p> -->
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div class="event-img">
+                                                    <!-- <img src="" alt="" /> -->
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="event-wrap">
+                                                    <!-- <h3>Event Name</h3>         
+                                                    <div class="time">
+                                                        <span>00:00 AM - 00:00 AM</span>
+                                                    </div> -->
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="r-no">
+                                                    <!-- <span>Address</span> -->
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="primary-btn">
+                                                    <!-- <a class="btn btn-secondary disabled" href="#">Read More</a> -->
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- <tr class="inner-box">
+                                            <th scope="row">
+                                                <div class="event-date">
+                                                    <span>Day</span>
+                                                    <p>Month</p>
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div class="event-img">
+                                                    <img src="" alt="" />
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="event-wrap">
+                                                    <h3>Event Name</h3>          
+                                                    <div class="time">
+                                                        <span>00:00 AM - 00:00 AM</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="r-no">
+                                                    <span>Address</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="primary-btn">
+                                                    <a class="btn btn-secondary disabled" href="#">Read More</a>
+                                                </div>
+                                            </td>
+                                        </tr> -->
+                                        <!-- <tr class="inner-box">
+                                            <th scope="row">
+                                                <div class="event-date">
+                                                    <span>Day</span>
+                                                    <p>Month</p>
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div class="event-img">
+                                                    <img src="" alt="" />
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="event-wrap">
+                                                    <h3>Event Name</h3>          
+                                                    <div class="time">
+                                                        <span>00:00 AM - 00:00 AM</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="r-no">
+                                                    <span>Address</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="primary-btn">
+                                                    <a class="btn btn-secondary disabled" href="#">Read More</a>
+                                                </div>
+                                            </td>
+                                        </tr> -->
+                                    </tbody>
+                                </table>
+                                <p>There are currently no upcoming events.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="event-schedule-area-two bg-color pad100 container secondary-background" id="past-events-table">
+        <h3  class="event-list-title">Past Events</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade active show" id="home" role="tabpanel">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th class="" scope="col">Date</th>
+                                            <th scope="col">Venue </th>
+                                            <th scope="col">Event</th>
+                                            <th scope="col">Location </th>
+                                            <th class="text-right" scope="col">Additional Info</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- <tr class="inner-box">
+                                            <th scope="row">
+                                                <div class="event-date">
+                                                    <span>Day</span>
+                                                    <p>Month</p>
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div class="event-img">
+                                                    <img src="" alt="" />
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="event-wrap">
+                                                    <h3>Event Name</h3>          
+                                                    <div class="time">
+                                                        <span>00:00 AM - 00:00 AM</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="r-no">
+                                                    <span>Address</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="primary-btn">
+                                                    <a class="btn btn-secondary disabled" href="#">Read More</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="inner-box">
+                                            <th scope="row">
+                                                <div class="event-date">
+                                                    <span>Day</span>
+                                                    <p>Month</p>
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div class="event-img">
+                                                    <img src="" alt="" />
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="event-wrap">
+                                                    <h3>Event Name</h3>          
+                                                    <div class="time">
+                                                        <span>00:00 AM - 00:00 AM</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="r-no">
+                                                    <span>Address</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="primary-btn">
+                                                    <a class="btn btn-secondary disabled" href="#">Read More</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="inner-box">
+                                            <th scope="row">
+                                                <div class="event-date">
+                                                    <span>Day</span>
+                                                    <p>Month</p>
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div class="event-img">
+                                                    <img src="" alt="" />
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="event-wrap">
+                                                    <h3>Event Name</h3>          
+                                                    <div class="time">
+                                                        <span>00:00 AM - 00:00 AM</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="r-no">
+                                                    <span>Address</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="primary-btn">
+                                                    <a class="btn btn-secondary disabled" href="#">Read More</a>
+                                                </div>
+                                            </td>
+                                        </tr> -->
+                                    </tbody>
+                                </table>
+                                <p>There are currently no past events.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
-  </div>
+
+<script src="../js/index.js"></script>
 </body>
 </html>

@@ -14,28 +14,38 @@
 
   <nav class="navbar-background">
     <div class="navbar container">  
-      <h3 class="primary-text">Lucienne Franco</h3>
-      <div class="links secondary-text">
-        <a href="../index.html">Home</a>
-        <a href="./videos.html">Videos</a>
-        <a href="./events.html">Events</a>
-        <a href="./resume.html">Resume</a>
-        <a href="./contact.html">Contact</a>
-      </div>
+        <a href="../index.html"><img src="../assets/img/LF.png" class="title-logo" alt=""></a>
+        <div class="links secondary-text">
+            <a href="../index.html">Home</a>
+            <a href="../public/videos.html" class="">Videos</a>
+            <a href="../public/events.html" class="">Events</a>
+            <a href="../public/resume.html" class="">Resume</a>
+            <!-- <a href="../public/contact.html" class="">Contact</a> -->
+        </div>
+        <div class="dropdown">
+            <button onclick="dropDown()" class="dropbtn">
+                <img src="../assets/img/menu.svg" class="dropbtn" alt="">
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="../index.html">Home</a>
+                <a href="../public/videos.html" class="">Videos</a>
+                <a href="../public/events.html" class="">Events</a>
+                <a href="../public/resume.html" class="">Resume</a>
+                <!-- <a href="../public/contact.html" class="">Contact</a> -->
+            </div>
+        </div> 
     </div>
-  </nav>
+</nav>
 
-  <div class="primary-background" id="hero-alt">
-    <div class="container center-text">
+  <div class="primary-background container" id="hero-alt">
+    <div class="center-text">
         <h1 class="title-top primary-text primary-padding">Resume</h1>
         <div id="resume"> 
             <img src="../assets/img/lucyResume.png" alt="" width="80%">
         </div>
     </div>
   </div>
-
-  
-    
-
+   
+<script src="../js/index.js"></script>
 </body>
 </html>

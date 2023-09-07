@@ -12,28 +12,40 @@
 </head>
 <body>
 
-    <nav class="navbar-background">
-        <div class="navbar container">  
-          <h3 class="primary-text">Lucienne Franco</h3>
-          <div class="links secondary-text">
+  <nav class="navbar-background">
+    <div class="navbar container">  
+        <a href="../index.html"><img src="../assets/img/LF.png" class="title-logo" alt=""></a>
+        <div class="links secondary-text">
             <a href="../index.html">Home</a>
-            <a href="./videos.html">Videos</a>
-            <a href="./events.html">Events</a>
-            <a href="./resume.html">Resume</a>
-            <a href="./contact.html">Contact</a>
-          </div>
+            <a href="../public/videos.html" class="">Videos</a>
+            <a href="../public/events.html" class="">Events</a>
+            <a href="../public/resume.html" class="">Resume</a>
+            <!-- <a href="../public/contact.html" class="">Contact</a> -->
         </div>
-      </nav>
+        <div class="dropdown">
+            <button onclick="dropDown()" class="dropbtn">
+                <img src="../assets/img/menu.svg" class="dropbtn" alt="">
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="../index.html">Home</a>
+                <a href="../public/videos.html" class="">Videos</a>
+                <a href="../public/events.html" class="">Events</a>
+                <a href="../public/resume.html" class="">Resume</a>
+                <!-- <a href="../public/contact.html" class="">Contact</a> -->
+            </div>
+        </div> 
+    </div>
+</nav>
 
-  <div class="primary-background primary-padding" id="hero-alt">
-    <div class="container flexbox-horiz">
+  <div class="primary-background primary-padding container" id="hero-alt">
+    <div class="flexbox-horiz">
         <h1 class="title-top primary-text">Videos</h1>
         <img class="hero-image-alt" src="../assets/img/videos.svg" alt="">
     </div>
   </div>
   <div id="videos">
-    <div class="secondary-background primary-padding">
-      <div class="container flexbox-horiz">
+    <div class="secondary-background primary-padding container">
+      <div class="flexbox-horiz">
         <div class="video-text flexbox-vert">
           <h2 class="secondary-text">Roméo et Juliette</h2>
           <p class="secondary-text">Act I, Je veux vivre</p>
@@ -41,8 +53,8 @@
         <iframe id="video1" width="450" height="315" src="https://www.youtube.com/embed/su5YZa_3Pn0?si=DPfx_ADPMaj_W9Qn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </div>
-    <div class="primary-background primary-padding">
-      <div class="container flexbox-horiz">
+    <div class="primary-background primary-padding container">
+      <div class="flexbox-horiz">
         <iframe id="video2" width="450" height="315" src="https://www.youtube.com/embed/9yH3bFhrDQ0?si=7aL13oagIm-EoW60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <div class="video-text flexbox-vert">
           <h2 class="secondary-text">"On My Own"</h2>
@@ -50,8 +62,8 @@
         </div>
       </div>
     </div>
-    <div class="secondary-background primary-padding">
-      <div class="container flexbox-horiz">
+    <div class="secondary-background primary-padding container">
+      <div class="flexbox-horiz">
         <div class="video-text flexbox-vert">
           <h2 class="secondary-text">"All I Ask of You"</h2>
           <h3 class="secondary-text">Duet with Michael Washington</h3>
@@ -60,8 +72,8 @@
         <iframe id="video3" width="450" height="315" src="https://www.youtube.com/embed/PAuSeeNfZDU?si=kpAYAIWHBI1i82yj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </div>
-    <div class="primary-background primary-padding">
-      <div class="container flexbox-horiz">
+    <div class="primary-background primary-padding container">
+      <div class="flexbox-horiz">
         <iframe id="video4" width="450" height="315" src="https://www.youtube.com/embed/cShLUJ-fXpk?si=eb_giOOsrMqD1YwJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <div class="video-text flexbox-vert">
           <h2 class="secondary-text">"Something"</h2>
@@ -69,8 +81,8 @@
         </div>
       </div>
     </div>
-    <div class="secondary-background primary-padding">
-      <div class="container flexbox-horiz">
+    <div class="secondary-background primary-padding container">
+      <div class="flexbox-horiz">
         <div class="video-text flexbox-vert">
           <h2 class="secondary-text">"Think of Me"</h2>
           <p class="secondary-text">The Phantom of the Opera</p>
@@ -79,5 +91,6 @@
       </div>
     </div>
   </div>
+  <script src="../js/index.js"></script>
 </body>
 </html>
