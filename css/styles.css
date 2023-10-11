@@ -332,7 +332,7 @@ iframe:hover {
         flex-direction: column-reverse;
     }
 
-    #videos .primary-background h3, #videos .primary-background p {
+    #videos .primary-background h2, #videos .primary-background h3, #videos .primary-background p {
         text-align: center;
     }
       
